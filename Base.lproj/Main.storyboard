@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01-01-2000 00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdS-Ok-yTo">
+                                <rect key="frame" x="100" y="179" width="214" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2t-7T-IeT">
+                                <rect key="frame" x="138.5" y="362" width="137" height="30"/>
+                                <state key="normal" title="Iniciar temporizador"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDz-rk-XBN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZP-3G-rRc">
+                                <rect key="frame" x="159" y="300" width="97" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segundos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EH8-eC-Ufg">
+                                <rect key="frame" x="264" y="307" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XdS-Ok-yTo" secondAttribute="trailing" id="1aD-kX-Tgd"/>
+                            <constraint firstItem="EH8-eC-Ufg" firstAttribute="top" secondItem="XdS-Ok-yTo" secondAttribute="bottom" constant="102" id="4pt-h2-FpP"/>
+                            <constraint firstItem="C2t-7T-IeT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5T7-HC-94z"/>
+                            <constraint firstItem="XdS-Ok-yTo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8AW-NM-qxe"/>
+                            <constraint firstItem="C2t-7T-IeT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EL7-rD-9sU"/>
+                            <constraint firstItem="EH8-eC-Ufg" firstAttribute="leading" secondItem="DZP-3G-rRc" secondAttribute="trailing" constant="8" symbolic="YES" id="Qua-Kx-rRt"/>
+                            <constraint firstItem="XdS-Ok-yTo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S9U-Zl-ix9"/>
+                            <constraint firstItem="XdS-Ok-yTo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="Szs-60-p31"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DZP-3G-rRc" secondAttribute="trailing" constant="158" id="VEk-Pa-XsA"/>
+                            <constraint firstItem="C2t-7T-IeT" firstAttribute="top" secondItem="DZP-3G-rRc" secondAttribute="bottom" constant="28" id="Wrc-FA-XJf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EH8-eC-Ufg" secondAttribute="trailing" constant="73" id="aOD-dZ-Ycl"/>
+                            <constraint firstItem="DZP-3G-rRc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="nx7-eb-HUB"/>
+                            <constraint firstItem="DZP-3G-rRc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="256" id="qAe-gv-1r1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentHour" destination="XdS-Ok-yTo" id="7nH-Te-A0e"/>
+                        <outlet property="textField" destination="DZP-3G-rRc" id="CWv-MT-5I9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
